@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitForge | Where Strength Is Forged</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Metal+Mania&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand">
+      <img src="fitforge.jpg" alt="FitForge logo" class="logo-img" />
+      <span class="logo-main">FitForge</span>
+    </div>
+    <nav class="nav__links">
+      <a href="#hero">Home</a>
+      <a href="training.html">Training</a>
+      <a href="trainer-select.html">Coaches</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html" class="nav__cta">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero hero--overlay" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content hero__content--centered">
+      <img src="assets/fitforge-logo.png" alt="FitForge logo" class="hero-logo" />
+      <p class="hero-tagline hero-tagline--large">
+        Crazy people doing crazy sh*t,<br />
+        if you're crazy enough, join us now.
+      </p>
+      <p class="hero-subtitle hero-subtitle--large">
+        We will forge you until you'll become fit.
+      </p>
+      <div class="hero__actions">
+        <a class="btn primary" href="register.html">Join FitForge</a>
+        <a class="btn ghost" href="training.html">Choose Training</a>
+      </div>
+      <div class="hero-hours">
+        <span class="pill">Weekdays: 5:00 a.m. – 11:00 p.m.</span>
+        <span class="pill">Weekends: 8–12 a.m. & 3–10 p.m.</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Simple menu tiles -->
+    <section class="section">
+      <div class="section__head">
+        <h2>Main Menu</h2>
+        <p class="muted">
+          Jump straight to what you need—no fluff, just iron.
+        </p>
+      </div>
+      <div class="grid menu-grid">
+        <a href="training.html" class="card card--link">
+          <h3>Training & Programs</h3>
+          <p class="muted">Pick your madness: powerlifting, strength, or shadow boxing.</p>
+        </a>
+        <a href="trainer-select.html" class="card card--link">
+          <h3>Coaches</h3>
+          <p class="muted">Choose Pranav, Paarth, Shashwat—or all three.</p>
+        </a>
+        <a href="#gallery" class="card card--link">
+          <h3>Facilities</h3>
+          <p class="muted">Two-floor setup, dedicated zones, and combat space.</p>
+        </a>
+        <a href="billing.html" class="card card--link">
+          <h3>Membership Plans</h3>
+          <p class="muted">Spark, Blaze, Inferno—scaled pricing and perks.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Small gallery strip -->
+    <section id="gallery" class="section">
+      <div class="section__head">
+        <h2>Inside the Forge</h2>
+        <p class="muted">
+          A quick look at the chaos you’re about to train in.
+        </p>
+      </div>
+      <div class="gallery-row">
+        <img src="fit_forge_1.jpg" alt="Gym floor with red track" />
+        <img src="fir_forge_2.jpg" alt="Cardio treadmills area" />
+        <img src="fit_forge_3.jpg" alt="Weight training zone" />
+        <img src="fir_forge_4.jpg" alt="Dumbbell rack and benches" />
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section cta">
+      <div>
+        <h2>Visit FitForge</h2>
+        <p class="muted">
+          500m away from KIET College toward Duhai. Walk in, sign in, and start forging.
+        </p>
+        <div class="hero__actions">
+          <a class="btn primary" href="register.html">Start as New Member</a>
+          <a class="btn ghost" href="tel:9411491300">Call 9411491300</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <p><strong>Address:</strong> 500m away from KIET College toward Duhai</p>
+        <p><strong>Phone:</strong> 9411491300</p>
+        <p><strong>Email:</strong> forge.fit@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 FitForge. Where strength is forged.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

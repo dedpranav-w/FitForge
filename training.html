@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitForge | Choose Training</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand"><span class="logo-main">FitForge</span></div>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section__head">
+        <h2>Select Your Training Types</h2>
+        <p class="muted">
+          You can choose more than one. Mix strength, power, and fight work.
+        </p>
+      </div>
+
+      <form id="training-form" class="form-grid">
+        <label>
+          <span>Available Trainings</span>
+          <div class="radio-group" style="flex-wrap:wrap;">
+            <label><input type="checkbox" name="training" value="powerlifting" /> Powerlifting & Arm Wrestling</label>
+            <label><input type="checkbox" name="training" value="strength" /> Strength Training</label>
+            <label><input type="checkbox" name="training" value="boxing" /> Shadow Boxing</label>
+          </div>
+        </label>
+
+        <button class="btn primary" type="submit">Continue to Choose Coaches</button>
+        <p class="muted small">
+          You can select multiple training styles. Next step: pick one or more coaches.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 FitForge. Where strength is forged.</footer>
+  <script src="training.js"></script>
+</body>
+</html>

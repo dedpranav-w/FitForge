@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitForge | Billing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand"><span class="logo-main">FitForge</span></div>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section__head">
+        <h2>Choose Your Plan & Duration</h2>
+        <p class="muted" id="summary-line">
+          Loading your selections...
+        </p>
+      </div>
+
+      <form id="billing-form" class="form-grid">
+        <label>
+          Membership Tier
+          <select name="plan" required>
+            <option value="">Select...</option>
+            <option value="Spark">Spark</option>
+            <option value="Blaze">Blaze</option>
+            <option value="Inferno">Inferno</option>
+          </select>
+        </label>
+
+        <label>
+          Billing Cycle
+          <select name="cycle" required>
+            <option value="">Select...</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Quarterly">Quarterly</option>
+            <option value="Half-Yearly">6 Months</option>
+            <option value="Yearly">Yearly (12 + 1 month)</option>
+          </select>
+        </label>
+
+        <button class="btn primary" type="submit">Confirm Package</button>
+        <p class="muted small">
+          This is a front‑end demo only for your assignment. No real payment.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 FitForge. Where strength is forged.</footer>
+  <script src="billing.js"></script>
+</body>
+</html>

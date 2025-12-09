@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitForge | Choose Coaches</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand"><span class="logo-main">FitForge</span></div>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section__head">
+        <h2>Select Your Coach(es)</h2>
+        <p class="muted" id="training-summary">
+          Loading your selected trainings...
+        </p>
+      </div>
+
+      <form id="coach-form" class="grid trainer-grid">
+        <label class="card">
+          <h3>Pranav Singh</h3>
+          <p class="muted small">Head Coach – Powerlifting & Arm Wrestling</p>
+          <div class="radio-group">
+            <label><input type="checkbox" name="coach" value="Pranav Singh" /> Choose Pranav</label>
+          </div>
+        </label>
+
+        <label class="card">
+          <h3>Paarth Dahiya</h3>
+          <p class="muted small">Strength Training Specialist</p>
+          <div class="radio-group">
+            <label><input type="checkbox" name="coach" value="Paarth Dahiya" /> Choose Paarth</label>
+          </div>
+        </label>
+
+        <label class="card">
+          <h3>Shashwat Aggarwal</h3>
+          <p class="muted small">Shadow Boxing & Conditioning</p>
+          <div class="radio-group">
+            <label><input type="checkbox" name="coach" value="Shashwat Aggarwal" /> Choose Shashwat</label>
+          </div>
+        </label>
+      </form>
+
+      <div class="section" style="margin-top:1.8rem;">
+        <button id="coach-continue" class="btn primary">
+          Continue to Billing
+        </button>
+        <p class="muted small">
+          You can choose more than one coach. Billing comes next.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 FitForge. Where strength is forged.</footer>
+  <script src="trainer-select.js"></script>
+</body>
+</html>

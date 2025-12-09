@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitForge | Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand"><span class="logo-main">FitForge</span></div>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html" class="nav__cta">Register</a>
+    </nav>
+  </header>
+
+  <main class="container auth">
+    <section class="card auth-card">
+      <h1>Create Your FitForge Account</h1>
+      <p class="muted">Join the forge and start training with purpose.</p>
+
+      <form id="register-form" class="form-grid">
+        <label>
+          Full Name
+          <input type="text" name="fullName" required placeholder="Enter your name" />
+        </label>
+
+        <label>
+          Age
+          <input type="number" name="age" required min="13" max="80" />
+        </label>
+
+        <label>
+          I am a
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" required /> Male</label>
+            <label><input type="radio" name="gender" value="female" required /> Female</label>
+          </div>
+        </label>
+
+        <label>
+          Phone Number
+          <input type="tel" name="phone" required placeholder="9411491300" />
+        </label>
+
+        <label>
+          Gmail
+          <input type="email" name="email" required placeholder="you@gmail.com" />
+        </label>
+
+        <label>
+          Password
+          <input type="password" name="password" required minlength="6" />
+        </label>
+
+        <label>
+          Confirm Password
+          <input type="password" name="confirmPassword" required minlength="6" />
+        </label>
+
+        <button class="btn primary" type="submit">Create Account</button>
+        <p class="muted small">
+          Already a member? <a href="login.html" class="link">Login here</a>.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 FitForge. Where strength is forged.</footer>
+  <script src="register.js"></script>
+</body>
+</html>

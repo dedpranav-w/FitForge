@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitForge | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand"><span class="logo-main">FitForge</span></div>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="login.html" class="nav__cta">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container auth">
+    <section class="card auth-card">
+      <h1>Welcome Back</h1>
+      <p class="muted small">Crazy enough to come back? Good.</p>
+
+      <form id="login-form" class="form-grid">
+        <label>
+          Gmail
+          <input type="email" name="email" required placeholder="you@gmail.com" />
+        </label>
+
+        <label>
+          Password
+          <input type="password" name="password" required minlength="6" />
+        </label>
+
+        <button class="btn primary" type="submit">Login</button>
+        <p class="muted small">
+          New here? <a href="register.html" class="link">Create an account</a>.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 FitForge. Where strength is forged.</footer>
+  <script src="login.js"></script>
+</body>
+</html>
